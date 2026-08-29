@@ -2,93 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code — Alan Ray</title>
-    <meta name="description" content="Backend and data engineering projects.">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;400&display=swap">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code - Alan Ray</title>
+  <meta name="description" content="Backend and data engineering projects.">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400&display=swap">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <div class="shell">
+  <div class="shell">
 
-        <header class="rail">
-            <a class="wordmark" href="index.html">Alan Ray</a>
-            <nav aria-label="Main">
-                <ul class="index">
-                    <li><a href="about.html" data-entry="01">About</a></li>
-                    <li><a href="course.html" data-entry="02">Narrative, New Media &amp; Gaming</a></li>
-                    <li><a href="writing.html" data-entry="03">Writing</a></li>
-                    <li><a href="code.html" data-entry="04" aria-current="page">Code</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="rail">
+      <a class="wordmark" href="index.html">Alan Ray</a>
+      <nav aria-label="Main">
+        <ul class="index">
+          <li><a href="about.html" data-entry="01">About</a></li>
+          <li><a href="course.html" data-entry="02">Narrative, New Media &amp; Gaming</a></li>
+          <li><a href="writing.html" data-entry="03">Writing</a></li>
+          <li><a href="code.html" data-entry="04" aria-current="page">Code</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class="content" id="main">
+    <main class="content" id="main">
+      <img class="banner" src="images/code.jpg" alt="A car ahead on a wet road through snow-covered woods.">
 
-            <div class="catalog">
-                <span>Entry 04</span>
-                <span>Software</span>
-                <span>Python &middot; Java &middot; GCP</span>
+      <h1>Code</h1>
+
+      <div class="prose">
+        <p class="lede">Backend and data engineering, mostly in Python. Source is on <a
+            href="https://github.com/rayar93">GitHub</a>.</p>
+      </div>
+
+      <ul class="entries">
+        <li>
+          <a href="https://github.com/rayar93/game-score-aggregator-cloud-run">
+            <span class="num">04.1</span>
+            <div>
+              <h2>Game Score Aggregator</h2>
+              <p>Aggregates and normalizes critic and user scores from IGDB, Steam, and Metacritic into a single
+                weighted ranking across 300,000+ titles, reconciling titles across sources with incompatible scales.
+                Built on Cloud Run over Cloud SQL Postgres, with scheduled ingestion through Cloud Run Jobs and Cloud
+                Scheduler.</p>
             </div>
-
-            <h1 class="page-title">Code</h1>
-
-            <div class="prose">
-                <p class="lede">Backend and data engineering, mostly in Python and Java on Google Cloud Platform. Source
-                    is on <a href="https://github.com/rayar93">GitHub</a>.</p>
+            <span class="status">CS 3537</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rayar93/post-hurricane-aerial-damage-assessment">
+            <span class="num">04.2</span>
+            <div>
+              <h2>Post-Hurricane Damage Assessment</h2>
+              <p>Classifies building damage from UAV imagery. Reproducing the source paper's methodology surfaced data
+                leakage in its original evaluation split.</p>
             </div>
+            <span class="status">CS 4440</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rayar93/opencritic-scraper-analyzer">
+            <span class="num">04.3</span>
+            <div>
+              <h2>OpenCritic Scraper &amp; Analyzer</h2>
+              <p>Scrapes 10,000 OpenCritic titles and carries them through cleaning, exploration, and modeling in one
+                pipeline. Parses robots.txt at runtime and honors the published crawl-delay instead of hardcoding a
+                rate.</p>
+            </div>
+            <span class="status">CS 3435</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rayar93/asset-flip-game">
+            <span class="num">04.4</span>
+            <div>
+              <h2>Asset Flip</h2>
+              <p>A 2D side-scrolling platformer in Godot 4, with real-time physics, state-driven enemy AI, and a
+                signal-driven event architecture across five playable levels.</p>
+            </div>
+            <span class="status">CS 4800</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rayar93/ml-classification-regression-sklearn">
+            <span class="num">04.5</span>
+            <div>
+              <h2>Classification &amp; Regression Pipelines</h2>
+              <p>Two end-to-end scikit-learn pipelines: four-class student performance classification (logistic
+                regression, 54.4% accuracy) and auction verification regression (random forest,
+                R&sup2;&nbsp;=&nbsp;0.991). GridSearchCV with 10-fold cross-validation.</p>
+            </div>
+            <span class="status">CS 4440</span>
+          </a>
+        </li>
+      </ul>
 
-            <ul class="entries">
+      <footer class="foot">
+        <span>&copy; 2026 Alan Ray</span>
+        <span><a href="mailto:rayar@appstate.edu">rayar@appstate.edu</a></span>
+      </footer>
+    </main>
 
-                <li class="entry">
-                    <a href="https://github.com/rayar93">
-                        <span class="entry-num">04.1</span>
-                        <span>
-                            <span class="entry-title">Game Score Aggregator</span>
-                            <span class="entry-note">Pulls and reconciles video game review data from IGDB, Steam, and
-                                OpenCritic. Deployed on Cloud Run with a Cloud SQL Postgres backend.</span>
-                        </span>
-                        <span class="entry-status">Deployed</span>
-                    </a>
-                </li>
-
-                <li class="entry">
-                    <a href="TODO">
-                        <span class="entry-num">04.2</span>
-                        <span>
-                            <span class="entry-title">Building Damage Classification</span>
-                            <span class="entry-note">A machine learning pipeline that classifies building damage from
-                                post-hurricane drone imagery against FEMA damage states.</span>
-                        </span>
-                        <span class="entry-status">Ongoing</span>
-                    </a>
-                </li>
-
-                <li class="entry">
-                    <a href="TODO">
-                        <span class="entry-num">04.3</span>
-                        <span>
-                            <span class="entry-title">Asset Flip</span>
-                            <span class="entry-note">A 2D platformer built in Godot.</span>
-                        </span>
-                        <span class="entry-status">In progress</span>
-                    </a>
-                </li>
-
-            </ul>
-
-            <footer class="foot">
-                <span>&copy; 2026 Alan Ray</span>
-                <span><a href="mailto:rayar@appstate.edu">rayar@appstate.edu</a></span>
-            </footer>
-
-        </main>
-    </div>
+  </div>
 </body>
 
 </html>
