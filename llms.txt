@@ -1,0 +1,16 @@
+# Alan Ray
+
+> Alan Ray - backend and data engineering, essays, and games.
+
+## Pages
+
+- [About](https://rayar93.github.io/about.html): Alan Ray is finishing a computer science degree at Appalachian State, working in backend and data engineering.
+- [Code](https://rayar93.github.io/code.html): Backend and data engineering projects.
+- [Writing](https://rayar93.github.io/writing.html): Essays on history, literature, and civil liberties, published as A. R. Ray.
+- [Narrative, New Media & Gaming](https://rayar93.github.io/course.html): Projects built for Narrative, New Media and Gaming at Appalachian State.
+- [Hellshow](https://rayar93.github.io/afterlife.html): A story podcast assembled from found audio: a call-in show broadcast from hell.
+
+## Elsewhere
+
+- [GitHub](https://github.com/rayar93)
+- [YouTube](https://www.youtube.com/@rayar93)
