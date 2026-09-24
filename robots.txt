@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rayar93.github.io/sitemap.xml
+Sitemap: https://alanray.dev/sitemap.xml
